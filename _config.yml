@@ -1,0 +1,37 @@
+title: "Francisco Romero Acosta"
+author: "Francisco Romero Acosta"
+description: "Francisco's personal website"
+permalink: /:title/
+lang: "en"
+excerpt_separator: "\n\n\n"
+date_format: "%B %d, %Y"
+
+# Layout
+
+show_excerpts: false             # show article excerpts instead of archive list on the home page
+show_frame: true                # display a grey frame on large screens
+show_sidebar: false             # show a sidebar instead of the usual header
+show_minimal: false             # remove all clutter
+
+#show_frame: "/assets/images/background.svg"
+
+# Menu                          # for available icons see https://fontawesome.com/v5/icons/
+
+navigation:                     # accepts {file, title, url, icon, sidebaricon}
+  - {file: "index.md", title: "About me"}
+  - {file: "Research.md", title: "Research", sidebaricon: home}
+  - {file: "Teaching.md", title: "Teaching", sidebaricon: address-card}
+  - {title: "CV", url: "/fran.pdf"}
+  # - {file: "CV_Romero.pdf", title: "CV"}
+
+external:                       # accepts {file, title, url, icon, sidebaricon}
+  - {title: Mail, icon: envelope, url: "mailto:Francisco.Romero@anu.edu.au"}
+  - {title: Github, icon: github, url: "https://FranRoAc.github.io"}
+  - {title: Linkedin, icon: linkedin, url: "https://linkedin.com/in/juan-francisco-romero-acosta-60b1a4b6"}
+
+comments:
+#  disqus_shortname: ""         # see https://disqus.com
+#  isso_domain: ""              # see https://isso-comments.de
+
+plugins:
+ - jekyll-feed
