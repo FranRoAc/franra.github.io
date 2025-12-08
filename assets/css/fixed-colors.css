@@ -1,29 +1,36 @@
 ---
 ---
-body,
-.frame,
-.wrapper,
-.container,
-.content,
-.sidebar,
-.main-wrapper,
-header,
-footer,
-nav {
-  background-color: #001f3f !important; /* navy */
+
+/* ============================ */
+/* FORCE NAVY BACKGROUND & WHITE TEXT EVERYWHERE */
+/* ============================ */
+
+/* Select all elements and pseudo-elements */
+*,
+*::before,
+*::after {
+  background-color: #001f3f !important; /* navy blue */
   color: #ffffff !important;           /* white text */
+  border-color: #ffffff !important;    /* optional for borders */
 }
 
-h1, h2, h3, h4, h5, h6,
-p, li, span, div {
-  color: #ffffff !important;
+/* Links */
+a, a:visited {
+  color: #1e90ff !important; /* readable light blue links */
+  text-decoration-color: currentColor !important;
 }
 
-a, nav a, footer a, .sidebar a, button, input[type="submit"] {
-  color: #ffffff !important;
-}
-
+/* Code blocks */
 code, pre, .highlight {
   background-color: #001733 !important;
   color: #ffffff !important;
+  border-radius: 4px;
+  padding: 2px 4px;
+}
+
+/* Buttons and inputs */
+button, input, textarea {
+  background-color: #001733 !important;
+  color: #ffffff !important;
+  border-color: #ffffff !important;
 }
