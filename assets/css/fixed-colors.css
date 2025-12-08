@@ -2,9 +2,11 @@
 ---
 body,
 .frame,
+.wrapper,
 .container,
 .content,
 .sidebar,
+.main-wrapper,
 header,
 footer,
 nav {
