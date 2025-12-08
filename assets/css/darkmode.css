@@ -1,51 +1,49 @@
----
----
-/* -------------------- */
-/* Light mode (default) */
-/* -------------------- */
+/* Force light/dark mode override for most theme elements */
 :root {
   color-scheme: light;
 }
 
-body {
+/* Base body */
+body, .post-content, .frame, .sidebar, .content, .container {
   background-color: white !important;
   color: black !important;
 }
 
-h1, h2, h3, h4, h5, h6,
-p, li, span, div {
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
   color: black !important;
 }
 
-a {
-  color: #1a0dab !important; /* standard link color in light mode */
+/* Links */
+a, .nav a, .footer a, .sidebar a {
+  color: #1a0dab !important; /* blue in light mode */
+  text-decoration-color: currentColor !important;
 }
 
-/* Optional: code blocks */
-code, pre {
+/* Code blocks */
+code, pre, .highlight {
   background-color: #f5f5f5 !important;
   color: black !important;
 }
 
-/* -------------------- */
-/* Dark mode             */
-/* -------------------- */
+/* ------------------ */
+/* Dark mode overrides */
+/* ------------------ */
 @media (prefers-color-scheme: dark) {
-  body {
+  body, .post-content, .frame, .sidebar, .content, .container {
     background-color: #121212 !important;
     color: #f5f5f5 !important;
   }
 
-  h1, h2, h3, h4, h5, h6,
-  p, li, span, div {
+  h1, h2, h3, h4, h5, h6 {
     color: #f5f5f5 !important;
   }
 
-  a {
+  a, .nav a, .footer a, .sidebar a {
     color: #1e90ff !important; /* bright link color for dark mode */
   }
 
-  code, pre {
+  code, pre, .highlight {
     background-color: #1e1e1e !important;
     color: #f5f5f5 !important;
   }
